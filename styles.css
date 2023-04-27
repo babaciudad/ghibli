@@ -274,16 +274,18 @@ nav {
     justify-content: center;
     gap: 1rem;
     position: absolute;
-    top: 50%;@media screen and (max-width: 768px) {
-    .banner img {
-        height: 200px;
-    }
+    top: 50%;@media screen and (max-width: 768px) 
+{
 
-    .login-form {
+.banner img {
+        height: 200px;
+}
+
+.login-form {
         position: static;
         justify-content: flex-end;
         margin-bottom: 1rem;
-    }
+ }
 
     nav {
         position: static;
@@ -299,11 +301,11 @@ nav {
         padding: 0.5rem 1rem;
     }
 
-    .cart {
+.cart {
         position: static;
         justify-content: flex-end;
         margin-bottom: 1rem;
-    }
+ }
 }
     right: 0;
     transform: translateY(-50%);
@@ -330,34 +332,30 @@ nav a:hover {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
 }
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
     .banner img {
-        height: 200px;
-    }
-
-    .login-form {
-        position: static;
-        justify-content: flex-end;
-        margin-bottom: 1rem;
-    }
-
-    nav {
-        position: static;
-        transform: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
+        height: 100px; /* Ajuster la hauteur de la bannière */
     }
 
     nav a {
-        font-size: 1rem;
+        font-size: 1rem; /* Ajuster la taille de police des liens de navigation */
         padding: 0.5rem 1rem;
     }
 
-    .cart {
-        position: static;
-        justify-content: flex-end;
-        margin-bottom: 1rem;
+    .cart-icon {
+        width: 4rem; /* Ajuster la taille de l'icône du panier */
+        height: 4rem;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        font-size: 0.875rem; /* Ajuster la taille de police des champs de saisie */
+        padding: 0.25rem;
+    }
+
+    .login-form button {
+        font-size: 0.875rem; /* Ajuster la taille de police du bouton */
+        padding: 0.25rem 0.5rem;
     }
 }
