@@ -324,53 +324,75 @@ nav a:hover {
     background-color: white;
     color: #333;
 }
-
-.main {
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
-}
-
-@media (max-width: 768px) {
-    .banner img {
-        height: 100px; /* Ajuster la hauteur de la bannière */
-    }
-
-    nav a {
-        font-size: 1rem; /* Ajuster la taille de police des liens de navigation */
-        padding: 0.5rem 1rem;
-    }
-
-    .cart-icon {
-        width: 4rem; /* Ajuster la taille de l'icône du panier */
-        height: 4rem;
-    }
-
-    .login-form input[type="email"],
-    .login-form input[type="password"] {
-        font-size: 0.875rem; /* Ajuster la taille de police des champs de saisie */
-        padding: 0.25rem;
-    }
-
-    .login-form button {
-        font-size: 0.875rem; /* Ajuster la taille de police du bouton */
-        padding: 0.25rem 0.5rem;
-    }
-}
-
-/* Ajouter ce code pour les écrans de téléphone */
 @media screen and (max-width: 768px) {
-  .banner {
-    height: 100px; /* Ajustez la hauteur de la bannière */
-    overflow: hidden; /* Cache les éléments qui dépassent de la bannière */
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    padding: 1rem 0;
   }
 
   .banner img {
-    height: auto;
-    max-height: 100%; /* Ajustez la hauteur maximale des images */
-    width: auto;
-    max-width: 100%; /* Ajustez la largeur maximale des images */
-    object-fit: cover; /* Redimensionne les images pour qu'elles couvrent la bannière */
+    height: 100px;
+  }
+
+  .login-form {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    position: static;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .cart {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  main {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .product {
+    padding: 0.5rem;
+  }
+
+  .product h2 {
+    font-size: 1.25rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .search-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .search-bar {
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .github-logo {
+    width: 40px;
+    height: 40px;
   }
 }
