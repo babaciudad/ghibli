@@ -270,47 +270,46 @@ header {
 }
 
 nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 768px) {
+  .banner img {
+    height: 200px;
+  }
+
+  .login-form {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+
+  nav {
+    position: static;
+    transform: none;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    position: absolute;
-    top: 50%;@media screen and (max-width: 768px) 
-{
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
 
-.banner img {
-        height: 200px;
+  nav a {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .cart {
+    position: static;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
 }
-
-.login-form {
-        position: static;
-        justify-content: flex-end;
-        margin-bottom: 1rem;
- }
-
-    nav {
-        position: static;
-        transform: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
-    }
-
-    nav a {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-    }
-
-.cart {
-        position: static;
-        justify-content: flex-end;
-        margin-bottom: 1rem;
- }
-}
-    right: 0;
-    transform: translateY(-50%);
-}
-
 nav a {
     color: white;
     text-decoration: none;
