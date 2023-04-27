@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: 150px; /* Modifiez cette valeur pour ajuster la hauteur de la bannière */
+    opacity: 0.9;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem; 
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.25rem; 
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #333;
+}
+
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    margin: 1rem 0;
+}
+
+.product p {
+    text-align: center;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+footer {
+    padding: 1rem;
+    background-color: #269737;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); 
+    background-color: white; 
+    transition: box-shadow 0.3s; 
+}
+
+.product:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.product p {
+    text-align: justify; 
+    margin-bottom: 1rem; 
+}
+
+.product p:last-child {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0; 
+}
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.banner {
+    position: relative;
+    z-index: 100; 
+    background-color: white; 
+}
+.login-form {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    border-color: #269737;
+}
+
+.login-form button {
+    background-color: #269737;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #1d7c2b;
+}
+
+.banner {
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+.cart {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    z-index: 101;
+}
+.cart-count {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: bold;
+    background-color: #269737;
+    border-radius: 50%;
+    padding: 0.25rem 0.5rem;
+}
+
+.search-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.github-logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000; /* Changer la couleur du contour ici */
+    transition: all 0.3s ease; /* Pour une transition douce */
+    margin-top: 10px;
+    }
+.github-logo:hover {
+    border-color: #ff4500; /* Changer la couleur du contour au survol ici */
+    transform: scale(1.1); /* Agrandit légèrement le logo au survol */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajoute un effet d'ombre */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.banner {
+    position: relative;
+    background-color: white;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    opacity: 0.9;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
