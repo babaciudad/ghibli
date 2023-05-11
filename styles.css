@@ -252,7 +252,6 @@ nav {
   right: 0;
   transform: translateY(-50%);
 }
-
 @media screen and (max-width: 768px) {
   .banner img {
     height: 200px;
