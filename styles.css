@@ -21,7 +21,7 @@ header {
 .banner img {
     display: block;
     width: 100%;
-    height: 150px; /* Modifiez cette valeur pour ajuster la hauteur de la bannière */
+    height: 150px;
     opacity: 0.9;
     object-fit: cover;
 }
@@ -109,32 +109,6 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
 }
-
-.product {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); 
-    background-color: white; 
-    transition: box-shadow 0.3s; 
-}
-
-.product:hover {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
-}
-
-.product p {
-    text-align: justify; 
-    margin-bottom: 1rem; 
-}
-
-.product p:last-child {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 0; 
 }
 .price {
     font-size: 1.25rem;
@@ -324,81 +298,6 @@ nav a:hover {
     background-color: white;
     color: #333;
 }
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  header {
-    padding: 1rem 0;
-  }
-
-  .banner img {
-    height: 100px;
-  }
-
-  .login-form {
-    position: static;
-    justify-content: flex-end;
-    margin-bottom: 1rem;
-  }
-
-  nav {
-    position: static;
-    transform: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-
-  nav a {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
-  .cart {
-    position: static;
-    justify-content: flex-end;
-    margin-bottom: 1rem;
-  }
-
-  main {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-
-  .product {
-    padding: 0.5rem;
-  }
-
-  .product h2 {
-    font-size: 1.25rem;
-  }
-
-  .price {
-    font-size: 1rem;
-  }
-
-  .search-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-
-  .search-bar {
-    width: 100%;
-    padding: 0.25rem 0.5rem;
-    font-size: 1rem;
-  }
-
-  .github-logo {
-    width: 40px;
-    height: 40px;
-  }
- 
-  .banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap; 
+.login-form {
+    max-width: 300px;
 }
