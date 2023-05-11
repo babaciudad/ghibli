@@ -231,14 +231,14 @@ html {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    border: 2px solid #000; /* Changer la couleur du contour ici */
-    transition: all 0.3s ease; /* Pour une transition douce */
+    border: 2px solid #000; 
+    transition: all 0.3s ease; 
     margin-top: 10px;
     }
 .github-logo:hover {
-    border-color: #ff4500; /* Changer la couleur du contour au survol ici */
-    transform: scale(1.1); /* Agrandit légèrement le logo au survol */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ajoute un effet d'ombre */
+    border-color: #ff4500; 
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
 * {
     margin: 0;
@@ -395,4 +395,10 @@ nav a:hover {
     width: 40px;
     height: 40px;
   }
+ 
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
 }
